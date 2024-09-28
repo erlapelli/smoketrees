@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f5f5f5; 
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            width: 300px; 
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        label, input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h1>Register User</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <h3>Address</h3>
+        <label for="addressLine">Address Line:</label>
+        <input type="text" id="addressLine" name="addressLine" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" required>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
